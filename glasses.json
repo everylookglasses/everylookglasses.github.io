@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Alen Bright",
+    "name": "wink",
     "image": "https://drive.google.com/uc?export=view&id=1eqttSlJ2_yUXCNT5_7fF7IYApJ2BfCkL",
     "category": ["fashion", "women", "all"]
   },
   {
     "id": 2,
-    "name": "Armin Gray",
+    "name": "Arm",
     "image": "https://drive.google.com/uc?export=view&id=12CcDfwyaXMupQjs67ie2iYUmu2sdyDSg",
     "category": ["men", "all"]
   },
   {
     "id": 3,
-    "name": "Mako Silver",
+    "name": "Mai",
     "image": "https://drive.google.com/uc?export=view&id=1e9dTgpdajGcLzQVY0lfwYVB22y2Bld1b",
     "category": ["fashion", "women", "all"]
   }
