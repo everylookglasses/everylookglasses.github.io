@@ -2,8 +2,10 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Everylook Glasses | เลือกกรอบแว่น</title>
   <style>
+    /* 🔹 พื้นหลัง + ตัวอักษรหลัก */
     body {
       font-family: "Roboto", Arial, sans-serif;
       background: #e6f3f8;
@@ -12,51 +14,59 @@
       color: #333;
     }
 
+    /* 🔹 ส่วนหัว */
     header {
       background: linear-gradient(100deg, #b8e0f2, #c7ebf9);
       text-align: center;
-      padding: 10px 10px;
+      padding: 20px 10px;
       position: relative;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     header img.logo {
       position: absolute;
-      top: 30px;
-      left: 5cm;
-      width: 130px;
-      border-radius: 150px;
+      top: 20px;
+      left: 20px;
+      width: 90px;
+      border-radius: 50%;
     }
-   header img.logoL {
+
+    header img.logoL {
       position: absolute;
-      top: 30px;
-      right: 5cm;
-      width: 130px;
-      border-radius: 150px;
+      top: 20px;
+      right: 20px;
+      width: 90px;
+      border-radius: 50%;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.2em;
+      margin: 10px 0 0 0;
+      font-size: 2em;
       color: #00001a;
     }
 
-    header p {
-      color: #297ca3;
-      font-size: 1.5em;
-      margin-top: 8px;
+    header h2 {
+      margin: 5px 0;
+      color: #00334d;
+      font-size: 1.3em;
     }
 
-    /* ปุ่ม Filter */
+    header p {
+      color: #004466;
+      font-size: 1.1em;
+    }
+
+    /* 🔹 ปุ่ม Filter */
     .filter-buttons {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .filter-buttons button {
       background-color: #b8e0f2;
       border: none;
-      padding: 10px 18px;
-      margin: 5px;
+      padding: 8px 15px;
+      margin: 4px;
       border-radius: 10px;
       font-size: 1em;
       color: #004466;
@@ -69,23 +79,24 @@
       transform: translateY(-2px);
     }
 
+    /* 🔹 แกลเลอรี */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .item {
       background: #fff;
-      border-radius: 20px;
+      border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.25s;
       cursor: pointer;
       text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
     }
 
     .item:hover {
@@ -95,22 +106,70 @@
 
     .item img {
       width: 100%;
-      height: 280px;
+      height: 220px;
       object-fit: cover;
     }
 
     .item p {
-      margin: 12px;
-      font-size: 1.05em;
+      margin: 10px;
+      font-size: 1em;
       color: #2b7ca4;
     }
 
+    /* 🔹 Lightbox (ภาพขยายเมื่อคลิก) */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    /* 🔹 ส่วนท้าย */
     .footer {
       text-align: center;
       padding: 20px;
       background: #b8e0f2;
       font-size: 0.9em;
       color: #2a7ba0;
+    }
+
+    /* 🔹 ปรับขนาดสำหรับมือถือ */
+    @media (max-width: 600px) {
+      header img.logo, header img.logoL {
+        width: 60px;
+        top: 10px;
+      }
+
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      header h2 {
+        font-size: 1.1em;
+      }
+
+      .item img {
+        height: 180px;
+      }
     }
   </style>
 </head>
@@ -119,14 +178,13 @@
   <header>
     <img src="logo.png" alt="โลโก้ร้าน" class="logo">
     <img src="logo.png" alt="โลโก้ร้าน" class="logoL">
-    <h1>👓 Everylook Glasses 👓 </h1>
-     <h2>ร้านแว่นตากรองแสง </h2>
-    <p style="color:#00004d;">"มีค่าสายตาสั้น ตัดได้ฟรี ไม่บวกเพิ่ม"</p>
+    <h1>👓 Everylook Glasses 👓</h1>
+    <h2>ร้านแว่นตากรองแสง</h2>
+    <p>"มีค่าสายตาสั้น ตัดได้ฟรี ไม่บวกเพิ่ม"</p>
   </header>
 
-  <!-- 🔹 ปุ่มกรองหมวด -->
   <div class="filter-buttons">
- <b> <u> <p>ดูตัวอย่างกรอบแว่นตา (เลือกได้ทุกแบบน้า)</p></u></b>
+    <b><u><p>ดูตัวอย่างกรอบแว่นตา (เลือกได้ทุกแบบน้า)</p></u></b>
     <button onclick="filterByCategory('all')">กรอบทั้งหมด</button>
     <button onclick="filterByCategory('men')">ทรงผู้ชาย</button>
     <button onclick="filterByCategory('women')">ทรงผู้หญิง</button>
@@ -134,43 +192,35 @@
     <button onclick="filterByCategory('sunglasses')">แว่นกันแดด เปลี่ยนสี</button>
   </div>
 
-  <!-- 🔹 แกลเลอรี -->
   <div class="gallery" id="gallery"></div>
 
   <div class="footer">
-    โปร Sale สั่งออนไลน์ เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)
+    โปร Sale เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)
+  </div>
+
+  <!-- 🔹 Lightbox HTML -->
+  <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="">
   </div>
 
   <script>
     const glassesData = [
-      { id: 1, name: 'Alen bright', image: 'ALB.JPG', category: ['fashion','women','All'] },
-      { id: 2, name: 'Alen Gray', image: 'ALG.jpg', category: ['fashion','women','All'] },
-      { id: 3, name: 'Alen pink', image: 'ALP.jpg', category: ['fashion','women','All'] },
+      { id: 1, name: 'Alen bright', image: 'ALB.jpg', category: ['fashion','women','all'] },
+      { id: 2, name: 'Alen Gray', image: 'ALG.jpg', category: ['fashion','women','all'] },
+      { id: 3, name: 'Alen pink', image: 'ALP.jpg', category: ['fashion','women','all'] },
       { id: 4, name: 'Armin bright&gray', image: 'amg.jpeg', category: ['all','men'] },
       { id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-  { id: 6, name: 'Gray Six', image: 'gray.jpeg', category: ['all','women'] },
-  { id: 7, name: 'mako silver', image: '1.heic', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-      { id: 6, name: 'กรอบผู้ชายหนา', image: 'frame6.jpg', category: ['men','sunglasses'] }
+      { id: 6, name: 'Gray Six', image: 'gray.jpeg', category: ['all','women'] }
     ];
 
     function renderGallery(items) {
       const gallery = document.getElementById('gallery');
-      gallery.innerHTML = ''; // เคลียร์ของเก่า
+      gallery.innerHTML = '';
       items.forEach(item => {
         const div = document.createElement('div');
         div.className = 'item';
         div.innerHTML = `
-          <img src="${item.image}" alt="${item.name}">
+          <img src="${item.image}" alt="${item.name}" onclick="openLightbox('${item.image}')">
           <p>${item.name}</p>
         `;
         gallery.appendChild(div);
@@ -186,12 +236,15 @@
       }
     }
 
+    function openLightbox(imageSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = imageSrc;
+      lightbox.style.display = 'flex';
+    }
+
     // เริ่มต้นแสดงทั้งหมด
     renderGallery(glassesData);
   </script>
-
 </body>
 </html>
-
-
-
