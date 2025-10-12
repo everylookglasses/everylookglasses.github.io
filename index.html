@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Everylook Glasses | เลือกกรอบแว่น</title>
   <style>
-    /* 🔹 พื้นหลัง + ตัวอักษรหลัก */
     body {
       font-family: "Roboto", Arial, sans-serif;
       background: #e6f3f8;
@@ -14,7 +13,6 @@
       color: #333;
     }
 
-    /* 🔹 ส่วนหัว */
     header {
       background: linear-gradient(100deg, #b8e0f2, #c7ebf9);
       text-align: center;
@@ -27,14 +25,6 @@
       position: absolute;
       top: 20px;
       left: 20px;
-      width: 90px;
-      border-radius: 50%;
-    }
-
-    header img.logoL {
-      position: absolute;
-      top: 20px;
-      right: 20px;
       width: 90px;
       border-radius: 50%;
     }
@@ -56,7 +46,6 @@
       font-size: 1.1em;
     }
 
-    /* 🔹 ปุ่ม Filter */
     .filter-buttons {
       text-align: center;
       margin-top: 15px;
@@ -79,7 +68,6 @@
       transform: translateY(-2px);
     }
 
-    /* 🔹 แกลเลอรี */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -116,7 +104,7 @@
       color: #2b7ca4;
     }
 
-    /* 🔹 Lightbox (ภาพขยายเมื่อคลิก) */
+    /* Lightbox */
     .lightbox {
       display: none;
       position: fixed;
@@ -143,7 +131,6 @@
       display: flex;
     }
 
-    /* 🔹 ส่วนท้าย */
     .footer {
       text-align: center;
       padding: 20px;
@@ -152,9 +139,8 @@
       color: #2a7ba0;
     }
 
-    /* 🔹 ปรับขนาดสำหรับมือถือ */
     @media (max-width: 600px) {
-      header img.logo, header img.logoL {
+      header img.logo {
         width: 60px;
         top: 10px;
       }
@@ -177,7 +163,6 @@
 
   <header>
     <img src="logo.png" alt="โลโก้ร้าน" class="logo">
-    <img src="logo.png" alt="โลโก้ร้าน" class="logoL">
     <h1>👓 Everylook Glasses 👓</h1>
     <h2>ร้านแว่นตากรองแสง</h2>
     <p>"มีค่าสายตาสั้น ตัดได้ฟรี ไม่บวกเพิ่ม"</p>
@@ -189,7 +174,6 @@
     <button onclick="filterByCategory('men')">ทรงผู้ชาย</button>
     <button onclick="filterByCategory('women')">ทรงผู้หญิง</button>
     <button onclick="filterByCategory('fashion')">ทรงปิดแก้ม</button>
-    <button onclick="filterByCategory('sunglasses')">แว่นกันแดด เปลี่ยนสี</button>
   </div>
 
   <div class="gallery" id="gallery"></div>
@@ -198,20 +182,20 @@
     โปร Sale เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)
   </div>
 
-  <!-- 🔹 Lightbox HTML -->
   <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
     <img id="lightbox-img" src="">
   </div>
 
   <script>
-    const glassesData = [
-      { id: 1, name: 'Alen bright', image: 'ALB.jpg', category: ['fashion','women','all'] },
-      { id: 2, name: 'Alen Gray', image: 'ALG.jpg', category: ['fashion','women','all'] },
-      { id: 3, name: 'Alen pink', image: 'ALP.jpg', category: ['fashion','women','all'] },
-      { id: 4, name: 'Armin bright&gray', image: 'amg.jpeg', category: ['all','men'] },
-      { id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-      { id: 6, name: 'Gray Six', image: 'gray.jpeg', category: ['all','women'] }
-    ];
+    let glassesData = [];
+
+    // โหลดข้อมูลจากไฟล์ JSON
+    fetch('glasses.json')
+      .then(response => response.json())
+      .then(data => {
+        glassesData = data;
+        renderGallery(glassesData);
+      });
 
     function renderGallery(items) {
       const gallery = document.getElementById('gallery');
@@ -242,9 +226,7 @@
       img.src = imageSrc;
       lightbox.style.display = 'flex';
     }
-
-    // เริ่มต้นแสดงทั้งหมด
-    renderGallery(glassesData);
   </script>
+
 </body>
 </html>
