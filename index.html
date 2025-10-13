@@ -140,55 +140,55 @@
   <div class="footer">
     โปร Sale  เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)
   </div>
-
   <script>
-    const glassesData = [
-      { id: 1, name: 'Alen bright', image: 'ALB.jpg', category: ['fashion','women','All'] },
-      { id: 2, name: 'Alen Gray', image: 'ALG.jpg', category: ['fashion','women','All'] },
-      { id: 3, name: 'Alen pink', image: 'ALP.jpg', category: ['fashion','women','All'] },
-      { id: 4, name: 'Armin bright&gray', image: 'amg.jpeg', category: ['all','men'] },
-      { id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 6, name: 'Gray Six', image: 'gray.jpeg', category: ['all','women'] },
-{ id: 7, name: 'mako silver', image: '1.heic', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-{ id: 5, name: 'mako silver', image: 'mks.jpeg', category: ['all','women','fashion'] },
-      { id: 6, name: 'กรอบผู้ชายหนา', image: 'frame6.jpg', category: ['men','sunglasses'] }
-    ];
+  let glassesData = [];
 
-    function renderGallery(items) {
-      const gallery = document.getElementById('gallery');
-      gallery.innerHTML = ''; // เคลียร์ของเก่า
-      items.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'item';
-        div.innerHTML = `
-          <img src="${item.image}" alt="${item.name}">
-          <p>${item.name}</p>
-        `;
-        gallery.appendChild(div);
-      });
+  // ฟังก์ชันแสดงผล
+  function renderGallery(items) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = ''; // เคลียร์ของเก่า
+    items.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.innerHTML = `
+        <img src="${item.image}" alt="${item.name}">
+        <p>${item.name}</p>
+      `;
+      gallery.appendChild(div);
+    });
+  }
+
+  // ฟังก์ชันกรอง
+  function filterByCategory(cat) {
+    if (cat === 'all') {
+      renderGallery(glassesData);
+    } else {
+      const filtered = glassesData.filter(item => item.category.includes(cat));
+      renderGallery(filtered);
     }
+  }
 
-    function filterByCategory(cat) {
-      if (cat === 'all') {
-        renderGallery(glassesData);
-      } else {
-        const filtered = glassesData.filter(item => item.category.includes(cat));
-        renderGallery(filtered);
-      }
-    }
+  // ✅ โหลดข้อมูลจากไฟล์ glasses.json
+  fetch('glasses.json')
+    .then(response => {
+      if (!response.ok) throw new Error('โหลดไฟล์ JSON ไม่ได้');
+      return response.json();
+    })
+    .then(data => {
+      glassesData = data;
+      renderGallery(glassesData); // แสดงภาพทั้งหมดตอนเริ่มต้น
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+      document.getElementById('gallery').innerHTML =
+        '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
+    });
+</script>
 
-    // เริ่มต้นแสดงทั้งหมด
-    renderGallery(glassesData);
+
+
   </script>
 
 </body>
 </html>
+
