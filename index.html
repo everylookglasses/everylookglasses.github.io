@@ -3,103 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everylook Glasses</title>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Everylook Glasses | เลือกกรอบแว่นฟรี</title>
+
   <style>
-    body {
-      font-family: 'Prompt', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
+  /* ====== โครงสร้างพื้นฐาน ====== */
+  body {
+    font-family: "Prompt", Arial, sans-serif;
+    background: #e6f3f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    header {
-      background: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: relative;
-    }
+  /* ====== HEADER ====== */
+  header {
+    background: linear-gradient(100deg, #b8e0f2, #c7ebf9);
+    text-align: center;
+    padding: 12px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
 
-    header img.logo {
-      height: 40px;
-      width: auto;
-    }
+  header img.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+    object-fit: cover;
+  }
 
-    .contact-icons {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
+  header h1 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #00334e;
+  }
 
-    .contact-icons a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #e5f1ff;
-      color: #0077ff;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+  header h2 {
+    font-size: 1em;
+    margin: 3px 0;
+    color: #225c78;
+  }
 
-    .contact-icons a:hover {
-      background: #0077ff;
-      color: white;
-      transform: scale(1.05);
-    }
+  header p {
+    font-size: 0.9em;
+    color: #004466;
+    margin-bottom: 8px;
+  }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
-      padding: 20px;
-    }
+  /* ====== ไอคอนโซเชียล ====== */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 5px;
+  }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+  }
 
-    @media (max-width: 600px) {
-      header img.logo {
-        height: 35px;
-      }
+  .social-icons a.line { background: #00C300; }
+  .social-icons a.ig {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  }
+  .social-icons a.map { background: #4285F4; }
 
-      .gallery {
-        grid-template-columns: repeat(2, 1fr); /* แสดงรูปแค่ 2 รูปต่อแถวในมือถือ */
-      }
-    }
+  .social-icons a:hover { transform: scale(1.1); opacity: 0.9; }
+
+  /* ====== MAIN CONTENT ====== */
+  main {
+    margin-top: 220px; /* ให้พ้น header */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+
+  /* ====== ปุ่มกรอง ====== */
+  .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons p {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .filter-buttons button {
+    background: #2b7ca4;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .filter-buttons button:hover {
+    background: #004f6b;
+  }
+
+  /* ====== GALLERY ====== */
+  .gallery {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: 901px) {
+    .gallery { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @media (max-width: 900px) and (min-width: 601px) {
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+
+  .item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .item p {
+    margin: 10px;
+    font-size: 0.95em;
+    color: #2b7ca4;
+  }
+
+  /* ====== FOOTER ====== */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #b8e0f2;
+    font-size: 0.9em;
+    color: #2a7ba0;
+    margin-top: 40px;
+  }
   </style>
 </head>
+
 <body>
 
   <header>
-    <img src="your-logo.png" alt="Everylook Glasses" class="logo">
-    <div class="contact-icons">
-      <a href="https://maps.app.goo.gl/xxxxxxxx"><i data-lucide="map-pin"></i></a>
-      <a href="https://lin.ee/xxxxxxxx"><i data-lucide="message-circle"></i></a>
-      <a href="https://instagram.com/yourshop"><i data-lucide="instagram"></i></a>
-      <a href="tel:0891234567" title="โทรเลย!"><i data-lucide="phone"></i></a> <!-- ปุ่มโทรศัพท์ -->
+    <img src="logo.png" alt="โลโก้ร้าน" class="logo">
+    <h1>👓 Everylook Glasses 👓</h1>
+    <h2>ร้านแว่นตากรองแสง</h2>
+    <p>"มีค่าสายตาสั้น ตัดได้ฟรี ไม่บวกเพิ่ม"</p>
+
+    <div class="social-icons">
+      <a href="https://lin.ee/@everylookglasses" class="line" target="_blank"><i class="fa-brands fa-line"></i></a>
+      <a href="https://www.instagram.com/everylook.glasses" class="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://maps.app.goo.gl/s3peG3gqGp6YXkLRA" class="map" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="tel:+66642215500" title="โทรเลย">📞</a>
     </div>
   </header>
 
-  <section class="gallery">
-    <img src="glasses1.jpg" alt="แว่นตา 1">
-    <img src="glasses2.jpg" alt="แว่นตา 2">
-    <img src="glasses3.jpg" alt="แว่นตา 3">
-    <img src="glasses4.jpg" alt="แว่นตา 4">
-  </section>
+  <main>
+    <div class="filter-buttons">
+      <p><b>ดูตัวอย่างกรอบแว่นตา</b> (เลือกได้ทุกแบบน้า)</p>
+      <button onclick="filterByCategory('all')">กรอบทั้งหมด</button>
+      <button onclick="filterByCategory('men')">ทรงผู้ชาย</button>
+      <button onclick="filterByCategory('women')">ทรงผู้หญิง</button>
+      <button onclick="filterByCategory('fashion')">ทรงปิดแก้ม</button>
+      <button onclick="filterByCategory('sunglasses')">แว่นกันแดด</button>
+      <button onclick="filterByCategory('review')">รีวิวลูกค้า</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+  </main>
+
+  <div class="footer">
+    โปร Sale: เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)<br>
+    📞 ติดต่อด่วน : 064-221-5500
+  </div>
 
   <script>
-    lucide.createIcons();
+  let glassesData = [];
+
+  function renderGallery(items) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = '';
+    items.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.innerHTML = `
+        <img src="${item.image}" loading="lazy" alt="${item.name}">
+        <p>${item.name}</p>
+      `;
+      gallery.appendChild(div);
+    });
+  }
+
+  function filterByCategory(cat) {
+    if (cat === 'all') renderGallery(glassesData);
+    else renderGallery(glassesData.filter(item => item.category.includes(cat)));
+  }
+
+  fetch('glasses.json')
+    .then(res => res.json())
+    .then(data => {
+      glassesData = data;
+      renderGallery(data);
+    })
+    .catch(() => {
+      document.getElementById('gallery').innerHTML =
+        '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
+    });
   </script>
 
 </body>
