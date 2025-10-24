@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Everylook Glasses | เลือกกรอบแว่นฟรี </title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Everylook Glasses | เลือกกรอบแว่นฟรี</title>
+
   <style>
   /* ====== โครงสร้างพื้นฐาน ====== */
   body {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Prompt", Arial, sans-serif;
     background: #e6f3f8;
     margin: 0;
     padding: 0;
@@ -18,133 +20,136 @@
     align-items: center;
   }
 
-  /* ====== HEADER ใหม่ (fixed แต่ไม่บังเนื้อหา) ====== */
+  /* ====== HEADER ====== */
   header {
     background: linear-gradient(100deg, #b8e0f2, #c7ebf9);
     text-align: center;
-    padding: 8px 10px; /* ลดความสูงลง */
+    padding: 12px 10px;
     width: 100%;
-    position: fixed; /* ✅ เปลี่ยนจาก sticky เป็น fixed */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
 
-  /* โลโก้ตรงกลาง */
   header img.logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 5px auto;
+    object-fit: cover;
   }
 
   header h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 0;
     color: #00334e;
   }
 
   header h2 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 3px 0;
     color: #225c78;
   }
 
   header p {
-    font-size: 0.95em;
+    font-size: 0.9em;
     color: #004466;
     margin-bottom: 8px;
   }
 
-  /* ====== ไอคอนโซเชียล (Line / IG / Map) ====== */
+  /* ====== ไอคอนโซเชียล ====== */
   .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     margin-top: 5px;
   }
 
   .social-icons a {
     text-decoration: none;
     color: #fff;
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.3s;
   }
 
-  .social-icons a.line {
-    background: #00C300;
-  }
+  .social-icons a.line { background: #00C300; }
   .social-icons a.ig {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   }
-  .social-icons a.map {
-    background: #4285F4;
-  }
+  .social-icons a.map { background: #4285F4; }
 
-  .social-icons a:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-  }
+  .social-icons a:hover { transform: scale(1.1); opacity: 0.9; }
 
-  /* ====== ระยะห่างส่วนเนื้อหา เพื่อไม่ให้โดน header บัง ====== */
+  /* ====== MAIN CONTENT ====== */
   main {
-    margin-top: 160px; /* ✅ เพิ่มส่วนนี้ให้เลื่อนเนื้อหาลงมา */
+    margin-top: 220px; /* ให้พ้น header */
     width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+
+  /* ====== ปุ่มกรอง ====== */
+  .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons p {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .filter-buttons button {
+    background: #2b7ca4;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .filter-buttons button:hover {
+    background: #004f6b;
   }
 
   /* ====== GALLERY ====== */
   .gallery {
     display: grid;
-    gap: 25px;
-    padding: 20px;
-    max-width: 1200px;
+    gap: 20px;
     width: 100%;
-    margin: 0 auto;
   }
 
-  /* Desktop */
   @media (min-width: 901px) {
-    .gallery {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    .gallery { grid-template-columns: repeat(4, 1fr); }
   }
 
-  /* Tablet */
   @media (max-width: 900px) and (min-width: 601px) {
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .gallery { grid-template-columns: repeat(3, 1fr); }
   }
 
-  /* Mobile */
   @media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  /* Very small screen */
-  @media (max-width: 400px) {
-    .gallery {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
   }
 
   .item {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: 0.3s;
   }
 
   .item:hover {
@@ -154,13 +159,13 @@
 
   .item img {
     width: 100%;
-    height: 250px;
+    height: 230px;
     object-fit: cover;
   }
 
   .item p {
-    margin: 12px;
-    font-size: 1.05em;
+    margin: 10px;
+    font-size: 0.95em;
     color: #2b7ca4;
   }
 
@@ -171,63 +176,44 @@
     background: #b8e0f2;
     font-size: 0.9em;
     color: #2a7ba0;
+    margin-top: 40px;
   }
-</style>
-
+  </style>
 </head>
+
 <body>
 
   <header>
-    <!-- ✅ แก้: ใช้ flex จัดโลโก้ให้อยู่ตรงกลาง -->
-    <div class="logo-container">
-      <img src="logo.png" alt="โลโก้ร้าน">
-      <!-- <img src="logo.png" alt="โลโก้ร้าน"> --> 
-    </div>
-
-    <h1>👓 Everylook Glasses 👓 </h1>
+    <img src="logo.png" alt="โลโก้ร้าน" class="logo">
+    <h1>👓 Everylook Glasses 👓</h1>
     <h2>ร้านแว่นตากรองแสง</h2>
     <p>"มีค่าสายตาสั้น ตัดได้ฟรี ไม่บวกเพิ่ม"</p>
 
     <div class="social-icons">
       <a href="https://lin.ee/@everylookglasses" class="line" target="_blank"><i class="fa-brands fa-line"></i></a>
       <a href="https://www.instagram.com/everylook.glasses" class="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://maps.app.goo.gl/s3peG3gqGp6YXkLRA" title="หน้าร้านไม่รับ Walk-in" class="map" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-      <a href="tel:+66642215500"  > 📞 </a> 
+      <a href="https://maps.app.goo.gl/s3peG3gqGp6YXkLRA" class="map" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="tel:+66642215500" title="โทรเลย">📞</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="filter-buttons">
+      <p><b>ดูตัวอย่างกรอบแว่นตา</b> (เลือกได้ทุกแบบน้า)</p>
+      <button onclick="filterByCategory('all')">กรอบทั้งหมด</button>
+      <button onclick="filterByCategory('men')">ทรงผู้ชาย</button>
+      <button onclick="filterByCategory('women')">ทรงผู้หญิง</button>
+      <button onclick="filterByCategory('fashion')">ทรงปิดแก้ม</button>
+      <button onclick="filterByCategory('sunglasses')">แว่นกันแดด</button>
+      <button onclick="filterByCategory('review')">รีวิวลูกค้า</button>
     </div>
 
-    <main>
-  <div class="filter-buttons">
-   <b><u><p>ดูตัวอย่างกรอบแว่นตา (เลือกได้ทุกแบบน้า)</p></u></b>
-    <button onclick="filterByCategory('all')">กรอบทั้งหมด</button>
-    <button onclick="filterByCategory('men')">ทรงผู้ชาย</button>
-    <button onclick="filterByCategory('women')">ทรงผู้หญิง</button>
-    <button onclick="filterByCategory('fashion')">ทรงปิดแก้ม</button>
-    <button onclick="filterByCategory('sunglasses')">แว่นกันแดด เปลี่ยนสี</button>
-     <button onclick="filterByCategory('review')">ส่องรีวิว</button> <!--เพิ้มรีวิว  -->
-  </div>
-
-  <div class="gallery" id="gallery"></div>
-</main>
-
-  </header> 
-  
-
-  <!-- 🔹 ปุ่มกรองหมวด -->
-  <!-- <div class="filter-buttons"> -->
-    <!-- <b><u><p>ดูตัวอย่างกรอบแว่นตา (เลือกได้ทุกแบบน้า)</p></u></b> -->
-    <!-- <button onclick="filterByCategory('all')">กรอบทั้งหมด</button> -->
-    <!-- <button onclick="filterByCategory('men')">ทรงผู้ชาย</button> -->
-    <!-- <button onclick="filterByCategory('women')">ทรงผู้หญิง</button> -->
-    <!-- <button onclick="filterByCategory('fashion')">ทรงปิดแก้ม</button> -->
-    <!-- <button onclick="filterByCategory('sunglasses')">แว่นกันแดด เปลี่ยนสี</button> -->
-     <!-- <button onclick="filterByCategory('review')">ส่องรีวิว</button> <!--เพิ้มรีวิว  --> -->
-  <!-- </div> -->
-
-  <!-- 🔹 แกลเลอรี -->
-  <div class="gallery" id="gallery"></div>
+    <div class="gallery" id="gallery"></div>
+  </main>
 
   <div class="footer">
-    โปร Sale  เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)  <br> ติดต่อด่วน : 0642215500 
+    โปร Sale: เลือกกรอบ + สายตา ได้ คุยรายละเอียดกับพี่แอดมินได้เลยนะคะ :)<br>
+    📞 ติดต่อด่วน : 064-221-5500
   </div>
 
   <script>
@@ -259,14 +245,10 @@
       renderGallery(data);
     })
     .catch(() => {
-      document.getElementById('gallery').innerHTML = '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
+      document.getElementById('gallery').innerHTML =
+        '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
     });
   </script>
 
 </body>
 </html>
-
-
-
-
-
