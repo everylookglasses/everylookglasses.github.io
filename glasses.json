@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "1",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335415/everylook/1.jpg",
-    "category": [
-      "all"
-    ]
-  },
-  {
     "id": 2,
     "name": "10",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335416/everylook/10.jpg",
