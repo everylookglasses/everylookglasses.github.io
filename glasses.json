@@ -171,7 +171,7 @@
     "id": 22,
     "name": "Nuffy black 50 mm",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316500/photo-output_9_vee6xy.jpg",
-    "category": [
+    "category" : [
       "all","women","men"
     ]
   },
