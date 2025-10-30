@@ -2,7 +2,7 @@
    {
     "id": 1,
     "name": "Titanium 56 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316510/photo-output_7_qwcfwl.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316510/photo-output_7_qwcfwl.jpg",
     "category": [
       "all","men","women","fasion"
     ]
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Rectwo 54 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316508/photo-output_6_wwvrv9.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316508/photo-output_6_wwvrv9.jpg",
     "category": [
       "all","women","fasion"
     ]
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Big special 56 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316505/photo-output_2_tbrc7p.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316505/photo-output_2_tbrc7p.jpg",
     "category": [
        "all","women","men"
     ]
@@ -26,7 +26,7 @@
    {
     "id": 4,
     "name": "Titanium 50 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316502/photo-output_8_ikj9s5.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316502/photo-output_8_ikj9s5.jpg",
     "category": [
       "all","women","men"
     ]
@@ -1169,66 +1169,65 @@
   },
   {
     "id": 147,
-    "name": "99",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335613/everylook/99.jpg",
+    "name": "หยดน้ำจิ๋ว",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841269/IMG_2956_fpl2s1.jpg",
     "category": [
-      "all"
+      "all","men","women"
     ]
   },
   {
     "id": 148,
-    "name": "ac (2)",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335614/everylook/ac_2.jpg",
+    "name": "polo01 black",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841260/IMG_2934_smyyxu.jpg",
     "category": [
-      "all"
+      "all","men","women"
     ]
   },
   {
     "id": 149,
-    "name": "ac",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335616/everylook/ac.jpg",
+    "name": "หยดน้ำ 50 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841065/photo-output_1_kfjc86.jpg",
     "category": [
-      "all"
+      "all","men","women"
     ]
   },
   {
     "id": 150,
-    "name": "ALB (2)",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335617/everylook/ALB_2.jpg",
+    "name": "mako rose",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841065/photo-output_3_kbmxez.jpg",
     "category": [
-      "all"
+      "all","men","women","fasion"
     ]
   },
   {
     "id": 151,
-    "name": "ALB",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335618/everylook/ALB.jpg",
+    "name": "หยดน้ำ 50 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841064/photo-output_0_xb08nt.jpg",
     "category": [
-      "all"
-    ]
+      "all","men","women"
   },
   {
     "id": 152,
-    "name": "ALG",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335619/everylook/ALG.jpg",
+    "name": "Bowy 54",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841064/photo-output_7_b6xb10.jpg",
     "category": [
-      "all"
+      "all","men","women","fasion"
     ]
   },
   {
     "id": 153,
-    "name": "ALGG",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335620/everylook/ALGG.jpg",
+    "name": "Totone",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841063/photo-output_5_hwieey.jpg",
     "category": [
-      "all"
+      "all","men","women","fasion"
     ]
   },
   {
     "id": 154,
-    "name": "Alp",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335622/everylook/Alp.jpg",
+    "name": "Clover gray",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761841063/photo-output_4_u6ikgb.jpg",
     "category": [
-      "all"
+      "all","women","men"
     ]
   },
   {
