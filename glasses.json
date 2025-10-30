@@ -1,7 +1,15 @@
 [
+   {
+    "id": 1,
+    "name": "Titanium 56 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316510/photo-output_7_qwcfwl.jpg",
+    "category": [
+      "all","men","women"
+    ]
+  },
   {
     "id": 2,
-    "name": "10",
+    "name": "",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335416/everylook/10.jpg",
     "category": [
       "all"
