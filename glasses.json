@@ -1609,7 +1609,7 @@
   },
   {
     "id": 202,
-    "name": "แจ้งข้อมูลก่อนสั่งซื้อ",
+    "name": "แจ้งข้อมูลก่อนสั่งซื้อดังนี้",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916569/E440D13E-60A2-43E8-A606-CD246F11F19E_iqjeju.jpg",
     "category": [
       "data"
@@ -1620,7 +1620,7 @@
     "name": "ชนิดเลนส์ แต่ละแบบ(Auto=เปลี่ยนสี)",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916570/Untitled_design_unokfo.png",
     "category": [
-      "all"
+      "data"
     ]
   },
   {
@@ -1628,39 +1628,39 @@
     "name": "ตัดใหม่100% ทุกออเดอร์",
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916570/9C40D83A-B22C-486B-AB5D-5411AD6BE41C_efepyc.png",
     "category": [
-      "all"
+      "data"
     ]
   },
   {
     "id": 205,
-    "name": "photo output 0(5)",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335687/everylook/photo-output_0_5.jpg",
+    "name": "กรองแสง+กันแดด(หยดน้ำ)",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916810/photo-output_qiol5q.jpg",
     "category": [
-      "all"
+      "sunglasses"
     ]
   },
   {
     "id": 206,
-    "name": "recros",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335689/everylook/recros.jpg",
+    "name": "กรองแสง+กันแดด(มีคาน)",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916811/90CB1EF5-FF13-4A5D-9D0E-9A0C97F7AC62_cqinm7.jpg",
     "category": [
-      "all"
+      "sunglasses"
     ]
   },
   {
     "id": 207,
-    "name": "RTB",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335690/everylook/RTB.jpg",
+    "name": "กรองแสง+กันแดด(ปิดแก้ม)",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916812/IMG_7127_leicim.jpg",
     "category": [
-      "all"
+      "sunglasses"
     ]
   },
   {
     "id": 208,
-    "name": "RTR",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335691/everylook/RTR.jpg",
+    "name": "กรองแสง+กันแดด",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916812/IMG_6738_cik1q9.jpg",
     "category": [
-      "all"
+       "sunglasses"
     ]
   },
   {
