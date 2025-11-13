@@ -1601,8 +1601,8 @@
   },
   {
     "id": 201,
-    "name": "Promotion เลือกกรอบทุกแบบ ! ไม่บวกเพิ่ม 15 พฤศจิกายน วันสุดท้าย",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761916567/797F39A5-E354-40B4-9102-A47895FE54F3_xo5igg.jpg",
+    "name": "Promotion นี้ 15 พฤศจิกายน วันสุดท้าย",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916567/797F39A5-E354-40B4-9102-A47895FE54F3_xo5igg.jpg",
     "category": [
       "data"
     ]
@@ -1618,7 +1618,7 @@
   {
     "id": 203,
     "name": "ชนิดเลนส์ แต่ละแบบ(Auto=เปลี่ยนสี)",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761916570/Untitled_design_unokfo.png",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761916570/Untitled_design_unokfo.png",
     "category": [
       "data"
     ]
@@ -3269,6 +3269,206 @@
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1762182565/7079888D-98A9-4B0C-A2B6-794BE5ADD9E3_xb64a9.jpg",
     "category": [
       "All","fasion","women"
+    ]
+  },
+  {
+    "id": 343,
+    "name": "Tiger FS",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025879/photo-output_9_oklpwb.jpg",
+    "category": [
+      "All","women"
+    ]
+  },
+  {
+    "id": 344,
+    "name": "Tiger BoL",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025880/photo-output_1_fnlayd.jpg",
+    "category": [
+      "All","women"
+    ]
+  },
+  {
+    "id": 345,
+    "name": "polo เน้นเบามี 3 สี",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025880/photo-output_2_uqibfq.jpg",
+    "category": [
+      "All","women","men","fasion"
+    ]
+  },
+  {
+    "id": 346,
+    "name": "เหลี่ยมยาว ลายกระ",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025880/photo-output_3_exrv9g.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 347,
+    "name": "สีเทา (จำนวนจำกัด)",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025881/photo-output_0_sqkrje.jpg",
+    "category": [
+      "All","women"
+    ]
+  },
+  {
+    "id": 348,
+    "name": "สีชา (จำนวนจำกัด)",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025882/photo-output_7_wmu66m.jpg",
+    "category": [
+      "All","women"
+    ]
+  },
+  {
+    "id": 349,
+    "name": "NK black",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025882/photo-output_6_ef9r4z.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 350,
+    "name": "Chili N gray",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025882/photo-output_9_soeo5w.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 351,
+    "name": "chili black 50mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025885/photo-output_7_pitg2k.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 352,
+    "name": "cat eye black 48mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025885/photo-output_6_fa8pdj.jpg",
+    "category": [
+      "All","women"
+    ]
+  },
+  {
+    "id": 353,
+    "name": "Jinny black 48mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025885/photo-output_5_k4bnrg.jpg",
+    "category": [
+      "All","women","men","fasion"
+    ]
+  },
+  {
+    "id": 354,
+    "name": "ทรงยาวกรอบใส",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025886/photo-output_4_xgflla.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 355,
+    "name": "NK white 49MM",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025886/photo-output_4_aroirl.jpg",
+    "category": [
+      "All","women","men"
+    ]
+  },
+  {
+    "id": 356,
+    "name": "mako Gold 52",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025888/photo-output_2_uepzaj.jpg",
+    "category": [
+      "All","women","men","fasion"
+    ]
+  },
+  {
+    "id": 357,
+    "name": "polo heart 51 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025888/photo-output_3_yjz4ah.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 358,
+    "name": "Crystal 50 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025889/photo-output_6_fgxdds.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 359,
+    "name": "chili 49 MM",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025889/photo-output_5_jjlelt.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 360,
+    "name": "Chili 51 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025890/photo-output_3_l3favm.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 361,
+    "name": "chili 49 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025890/photo-output_4_ykbfon.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 362,
+    "name": "Chili 51 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025891/photo-output_2_ywni75.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 363,
+    "name": "หยดน้ำ 48 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025891/photo-output_8_yeibsv.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 364,
+    "name": "Little DR 55 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025891/photo-output_1_kjkmu2.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 365,
+    "name": "Little DR 55 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025892/photo-output_0_jswmsn.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 366,
+    "name": "Cat eye 55 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025892/photo-output_1_gumfcg.jpg",
+    "category": [
+      "All","women","fasion"
+    ]
+  },
+  {
+    "id": 367,
+    "name": "T1 titanium 51 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1763025893/photo-output_0_lml0nc.jpg",
+    "category": [
+      "All","women"
     ]
   }
 ]
