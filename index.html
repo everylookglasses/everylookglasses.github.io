@@ -22,17 +22,15 @@
 
   /* ====== HEADER ====== */
   header {
-  width: 100%;
-  text-align: center;
-  padding: 25px 10px 15px;
-  background: linear-gradient(160deg, #cfeffd 0%, #e6f7ff 60%, #ffffff 100%);
-  position: relative;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  border-bottom: 2px solid #b3e5fc;
-  border-radius: 0 0 20px 20px;
-}
-
-
+    width: 100%;
+    text-align: center;
+    padding: 25px 10px 15px;
+    background: linear-gradient(160deg, #cfeffd 0%, #e6f7ff 60%, #ffffff 100%);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-bottom: 2px solid #b3e5fc;
+    border-radius: 0 0 20px 20px;
+  }
 
   header img.logo {
     width: 80px;
@@ -88,15 +86,18 @@
   }
   .social-icons a.map { background: #4285F4; }
   .social-icons a.shopee {
-  background: linear-gradient(135deg, #ff6600, #ff9966);
-}
-
+    background: linear-gradient(135deg, #ff6600, #ff9966);
+  }
+  /* ====== TikTok (เพิ่ม) ====== */
+  .social-icons a.tiktok {
+    background: #000; /* สีแบรนด์ดำของ TikTok */
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.02);
+  }
 
   .social-icons a:hover { transform: scale(1.1); opacity: 0.9; }
 
   /* ====== MAIN CONTENT ====== */
   main {
-    /* margin-top: 220px; /* ให้พ้น header */ */
     width: 100%;
     max-width: 1200px;
     padding: 0 10px;
@@ -132,7 +133,7 @@
   /* ====== GALLERY ====== */
   .gallery {
     display: grid;
-    gap: 5px;
+    gap: 12px;
     width: 105%;
   }
 
@@ -155,6 +156,9 @@
     overflow: hidden;
     text-align: center;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .item:hover {
@@ -162,14 +166,27 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   }
 
+  /* ====== ปรับพฤติกรรมรูปให้เห็นทั้งภาพ (ไม่ครอป) ====== */
+  .img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;           /* ช่องว่างรอบรูป */
+    background: #fff;
+  }
+
+  /* เอา height คงที่ออก — ให้รูปคุมตัวเองตามสัดส่วน */
   .item img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 320px; /* กำหนดขีดจำกัดสูงสุดเพื่อไม่ให้การ์ดยาวเกินไป */
+    object-fit: contain; /* ป้องกันการครอป, จะเห็นทั้งภาพ */
+    display: block;
   }
 
   .item p {
-    margin: 10px;
+    margin: 8px 12px 14px 12px;
     font-size: 0.95em;
     color: #2b7ca4;
   }
@@ -187,26 +204,25 @@
 </head>
 
 <body>
-<!-- แถบประกาศด้านบน 
-<div style="background-color:#f9f9f9; color:#333; text-align:center; padding:8px 0; font-size:14px; border-bottom:1px solid #ddd;">
-  💬 จองคิวล่วงหน้าก่อนเข้ารับบริการได้เลย!  
-  <a href= "https://lin.ee/r7c4Sm7" style="color:#007bff; text-decoration:none;">คลิกที่นี่เพื่อแจ้งจองคิววัดสายตา</a>
-
-</div>-->
   <header>
     <img src="logo.png" alt="โลโก้ร้าน" class="logo">
     <h1>👓 Everylook Glasses 👓</h1>
     <h2>แว่นตากรองแสง เลนส์แท้ ตัดใหม่<b>(รับตัดตามค่าสายตาน้า)</b></h2>
-    <p>"วันนี้มีโปร สั่งออนไลน์<b>(ทุกค่าสายตา)</b>"</p>
+    <p>"วันนี้มีโปร สั่งออนไลน์<b>(ได้ทุกค่าสายตา)</b>"</p>
 
     <div class="social-icons">
       <a href="https://lin.ee/r7c4Sm7" class="line" target="_blank"><i class="fa-brands fa-line"></i></a>
       <a href="https://www.instagram.com/everylook.glasses" class="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://maps.app.goo.gl/s3peG3gqGp6YXkLRA" class="map" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-<!-- ✅ Shopee -->
-  <a href="https://shopee.co.th/everylook.glasses" class="shopee" target="_blank" title="ร้านบน Shopee">
-    <i class="fa-solid fa-bag-shopping"></i>
-  </a>
+      <a href="https://shopee.co.th/everylook.glasses" class="shopee" target="_blank" title="ร้านบน Shopee">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+
+      <!-- ====== TikTok (เพิ่ม) ====== -->
+      <a href="https://www.tiktok.com/@everylook.glasses?_r=1&_t=ZS-91My1pztTuC" class="tiktok" target="_blank" title="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
       <a href="tel:+66642215500" title="โทรเลย" style="background-color: #e6f3f8 ; width: 38px;
     height: 38px;
     border-radius: 50%;">📞</a>
@@ -248,7 +264,9 @@
       const div = document.createElement('div');
       div.className = 'item';
       div.innerHTML = `
-        <img src="${item.image}" loading="lazy" alt="${item.name}">
+        <div class="img-wrap">
+          <img src="${item.image}" loading="lazy" alt="${item.name}">
+        </div>
         <p>${item.name}</p>
       `;
       gallery.appendChild(div);
@@ -271,36 +289,5 @@
         '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
     });
   </script>
-
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
