@@ -183,6 +183,30 @@
     color: #2a7ba0;
     margin-top: 40px;
   }
+
+    /* ====== ปุ่มกลับขึ้นด้านบน ====== */
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #2b7ca4;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  display: none;  /* ซ่อนก่อน */
+  z-index: 999;
+  transition: 0.3s;
+}
+
+#backToTop:hover {
+  background: #004f6b;
+  transform: scale(1.1);
+}
+
   </style>
 </head>
 
@@ -270,12 +294,33 @@
       document.getElementById('gallery').innerHTML =
         '<p style="color:red;text-align:center;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
     });
+
+    // ====== ปุ่มกลับขึ้นด้านบน ======
+const backToTop = document.getElementById("backToTop");
+
+// แสดงปุ่มเมื่อเลื่อนลงมามากกว่า 400px
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+// เมื่อกด → เลื่อนขึ้นอย่างนุ่มนวล
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
   </script>
+  
+<button id="backToTop" title="กลับขึ้นด้านบน">⬆️</button>
 
 
 
 </body>
 </html>
+
 
 
 
