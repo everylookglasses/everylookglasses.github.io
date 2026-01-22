@@ -25,10 +25,10 @@
   },
    {
     "id": 4,
-    "name": "Titanium 50 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316502/photo-output_8_ikj9s5.jpg",
+    "name": "ปิดแก้ม 56 mm",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102517/photo-output_8_uygxgz.jpg",
     "category": [
-      "all","women","men"
+      "all","women"
     ]
   },
    {
@@ -97,8 +97,8 @@
   },
   {
     "id": 13,
-    "name": "Titanium black 51mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335430/everylook/11.jpg",
+    "name": "หยดน้ำ สีเงิน ขาสปริง",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102515/photo-output_1_elngcy.jpg",
     "category": [
       "all","women","men"
     ]
@@ -201,10 +201,10 @@
   },
   {
     "id": 26,
-    "name": "Special Jew 49 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335446/everylook/121.jpg",
+    "name": "Chili Cha เก็บเลนส์ดี",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102514/photo-output_2_msl0wb.jpg",
     "category": [
-      "all","women"
+      "all","women","men"
     ]
   },
   {
@@ -3493,6 +3493,46 @@
     "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1768368486/6452CE24-2161-44BE-AD35-881F4488BF35_vape4q.jpg",
     "category": [
       "review","data"
+    ]
+  },
+  {
+    "id": 371,
+    "name": "MUV black All",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102514/photo-output_0_qy7a8w.jpg",
+    "category": [
+      "all"
+    ]
+  },
+  {
+    "id": 372,
+    "name": "Mable Cha",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102515/photo-output_3_zki79g.jpg",
+    "category": [
+      "all"
+    ]
+  },
+  {
+    "id": 373,
+    "name": "กันแดดเพรียว + สายตาสั้น",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102518/photo-output_5_hdn42h.jpg",
+    "category": [
+      "all","sunglasses","men"
+    ]
+  },
+  {
+    "id": 374,
+    "name": "ปิดแก้ม ทรงใหญ่ สีใส",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769102700/IMG_6934_tssmdn.jpg",
+    "category": [
+      "all","fasion","men"
+    ]
+  },
+  {
+    "id": 375,
+    "name": "หยดน้ำ+ออกแดดสีดำ",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1769103292/IMG_7456_jpfqee.jpg",
+    "category": [
+     "sunglasses"
     ]
   }
 ]
