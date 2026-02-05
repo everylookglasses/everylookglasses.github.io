@@ -386,9 +386,9 @@
   {
     "id": 49,
     "name": "ปิดแก้ม รุ่นฮิต 55 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335477/everylook/142.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335477/everylook/142.jpg",
     "category": [
-      "all","women","men","fasion"
+      "all","women","men"
     ]
   },
   {
@@ -410,7 +410,7 @@
   {
     "id": 52,
     "name": "armin gray",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335481/everylook/145.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335481/everylook/145.jpg",
     "category": [
       "all","women","men"
     ]
@@ -418,7 +418,7 @@
   {
     "id": 53,
     "name": "korea 54 mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335483/everylook/146.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335483/everylook/146.jpg",
     "category": [
       "all","women","men","fasion"
     ]
@@ -426,7 +426,7 @@
   {
     "id": 54,
     "name": "chic BS 54mm",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1760335484/everylook/147.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1760335484/everylook/147.jpg",
     "category": [
       "all","women","men","fasion"
     ]
@@ -458,7 +458,7 @@
   {
     "id": 58,
     "name": "8006 bright",
-    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/v1761316485/photo-output_6_avyeu6.jpg",
+    "image": "https://res.cloudinary.com/dqgbulnd7/image/upload/f_auto,q_auto,w_600/v1761316485/photo-output_6_avyeu6.jpg",
     "category": [
       "all","women","men","fasion"
     ]
